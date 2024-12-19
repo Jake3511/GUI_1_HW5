@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Scrabble</title>
+    <link rel="stylesheet" href="/styles/index.css">
+  </head>
+  <body>
+    <h1>Single Line Scrabble Game</h1>
+    <img src = "/graphics_data/Scrabble_Board_OneLine.png" class="board">
+    <img src = "/graphics_data/scrabble-tile-holder-406774_640.png" class = "rack">
+
+    <div id = "draggable-container">
+      <div class="draggable-slot"></div>
+      <div class="draggable-slot"></div>
+      <div class="draggable-slot"></div>
+      <div class="draggable-slot"></div>
+      <div class="draggable-slot"></div>
+      <div class="draggable-slot"></div>
+      <div class="draggable-slot"></div>
+    </div>
+
+    <div class = "droppable-container">
+      <div class="droppable"></div>
+      <div class="droppable"></div>
+      <div class="droppable-double-word-3" data-type = "double-word"></div>
+      <div class="droppable"></div>
+      <div class="droppable"></div>
+      <div class="droppable"></div>
+      <div class="droppable-double-letter-7" data-type = "double-letter"></div>
+      <div class="droppable"></div>
+      <div class="droppable-double-letter-9" data-type = "double-letter"></div>
+      <div class="droppable"></div>
+      <div class="droppable"></div>
+      <div class="droppable"></div>
+      <div class="droppable-double-word-13" data-type = "double-word"></div>
+      <div class="droppable"></div>
+      <div class="droppable"></div>
+    </div>
+    <div id="score-display-container">
+      <div id="score-display">Score: 0</div>
+      <div id="button-container">
+          <button id="next-button">Next</button>
+          <button id="restart-button">Restart Game</button>
+      </div>
+  </div>
+    <script
+        src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+        crossorigin="anonymous">
+    </script>
+    <script
+        src="https://code.jquery.com/ui/1.14.1/jquery-ui.js"
+        integrity="sha256-9zljDKpE/mQxmaR4V2cGVaQ7arF3CcXxarvgr7Sj8Uc="
+        crossorigin="anonymous">
+    </script>
+    <script src="index.js"></script>
+
+  </body>
+</html>

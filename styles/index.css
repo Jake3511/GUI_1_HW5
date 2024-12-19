@@ -1,0 +1,94 @@
+body {
+    background-color: darkgray;
+}
+#score-display-container { /* For the score box */
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 10px 20px;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    text-align: center;
+}
+
+.board { /* Where the image appears on screen */
+    top: 60px;
+    position: absolute;
+}
+#next-button { /* What the next button looks like in container */
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 10px;
+}
+#restart-button { /* What the restart button looks like in container */
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 10px;
+}
+.rack { /* Where the rack is placed */
+    position: relative;
+    width: fit-content;
+    margin: 0 auto;
+    left: 550px;
+    top: 120px;
+}
+
+#draggable-container { /* Where the container of letters are originally placed */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    left: 10px;
+}
+
+.draggable { /* The letters themselves */
+    width: 50px;
+    height: 50px;
+    cursor: grab;
+    z-index: 2;
+    position: relative;
+}
+
+.droppable-container { /* container for the droppable boxes themselves */
+    top: 65px;
+    left: 10px;
+    position: absolute;
+    display: grid;
+    grid-template-columns: repeat(15, 65px);
+    gap: 10px;
+}
+
+.droppable { /* Individual boxes */
+    width: 65px;
+    height: 65px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    
+    position: relative;
+}
+/* The four special word type cases */
+.droppable-double-word-3,
+.droppable-double-word-13 {
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+}
+
+.droppable-double-letter-7,
+.droppable-double-letter-9 {
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+}
