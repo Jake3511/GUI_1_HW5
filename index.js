@@ -149,7 +149,7 @@ function getRandomLetters() { // gets seven random letters
         const img = document.createElement("img"); // creates an img element
 
         if (randomKey == '_') { // for the blank key since file name can't be generalized
-            img.src = `/graphics_data/Scrabble_Tiles/Scrabble_Tile_blank.jpg`
+            img.src = `./graphics_data/Scrabble_Tiles/Scrabble_Tile_blank.jpg`
             img.alt = `Scrabble Tile _`
             img.style.width = "65px"; 
             img.style.height = "63px";
@@ -157,7 +157,7 @@ function getRandomLetters() { // gets seven random letters
             container.appendChild(img);
         }
         else {
-            img.src = `/graphics_data/Scrabble_Tiles/Scrabble_Tile_${randomKey}.jpg`
+            img.src = `./graphics_data/Scrabble_Tiles/Scrabble_Tile_${randomKey}.jpg`
             img.alt = `Scrabble Tile ${randomKey}`;
             img.style.width = "65px";
             img.style.height = "63px";
