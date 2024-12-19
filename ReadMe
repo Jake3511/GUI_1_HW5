@@ -11,4 +11,9 @@ https://www.w3schools.com/js/js_objects.asp
 https://www.w3schools.com/js/js_htmldom_eventlistener.asp
 https://www.youtube.com/watch?v=XF1_MlZ5l6M
 
+This program is a simple take on Scrabble that utilizes jQuery Plugins to add draggable and droppable features to the program, 
+as well as using vanilla JavaScript for some of the more simple functionality of the program like getting a random letter or updating the score. I would say this project was 
+super tedious in the sense that there were a bunch of tiny bugs that you had to try to iron out before moving to the next step. Overall, I would say that this project went fairly
+well with a few minor hiccups listed below.
+
 Things I struggled with: Creating the seven droppable points to put on the rack, and having it so two letters had to be side by side.
